@@ -29,7 +29,7 @@ class BoletoFacil {
     public $payerCpfCnpj;
     public $payerEmail;
     public $payerSecondaryEmail;
-    public $ayerPhone;
+    public $payerPhone;
     public $payerBirthDate;
 
     public $billingAddressStreet;
@@ -116,10 +116,9 @@ class BoletoFacil {
     }
 
 
-    public function requestTransfer($amount) {
+    public function requestTransfer() {
         $requestData = array(
             'token'         => $this->token,
-            'amount'        => $amount,
             'responseType'  => BoletoFacil::RESPONSE_TYPE
         );
 
