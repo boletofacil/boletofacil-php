@@ -14,7 +14,7 @@ namespace BoletoFacil;
 
 class BoletoFacil {
 
-    public $amountTransfer;
+    public $transferAmount;
 
     public $description;
     public $reference;
@@ -122,7 +122,7 @@ class BoletoFacil {
         $requestData = array(
             'token'         => $this->token,
             'responseType'  => BoletoFacil::RESPONSE_TYPE,
-            'amount'        => $this->amountTransfer
+            'amount'        => $this->transferAmount
         );
 
         return $this->request("request-transfer", $requestData);
