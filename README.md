@@ -111,7 +111,7 @@ require 'boletofacil.php';
 use BoletoFacil\BoletoFacil;
 
 $boletoFacil = new BoletoFacil("SEU_TOKEN");
-$boletoFacil->amountTransfer = "147.36";
+$boletoFacil->transferAmount = "147.36";
 $boletoFacil->requestTransfer();
 ```
 
