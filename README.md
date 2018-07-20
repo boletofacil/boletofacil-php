@@ -104,7 +104,16 @@ $boletoFacil = new BoletoFacil("SEU_TOKEN");
 $boletoFacil->requestTransfer();
 ```
 
+Para definir o valor a ser transferido:
 
+```php
+require 'boletofacil.php';
+use BoletoFacil\BoletoFacil;
+
+$boletoFacil = new BoletoFacil("SEU_TOKEN");
+$boletoFacil->transferAmount = "147.36";
+$boletoFacil->requestTransfer();
+```
 
 
 ## Cancelamento de cobrança: ##
