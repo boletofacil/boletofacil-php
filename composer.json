@@ -1,0 +1,13 @@
+{
+    "name": "boletofacil/boletofacil-php",
+    "description": "SDK para integração com o Boleto Fácil",
+    "type": "library",
+    "require": {
+        "ext-curl": "^7.1"
+    },
+    "autoload": {
+        "files": [
+            "boletofacil.php"
+        ]
+    }
+}
