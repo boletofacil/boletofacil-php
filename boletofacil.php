@@ -142,6 +142,9 @@ class BoletoFacil {
 
     private function request($urlSufix, $data) {
         $curl = curl_init();
+        
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, FALSE);
+        
         curl_setopt_array($curl, array(
             CURLOPT_URL => ($this->sandbox ? BoletoFacil::SANDBOX_URL : BoletoFacil::PROD_URL).$urlSufix,
             CURLOPT_RETURNTRANSFER => true,
